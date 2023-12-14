@@ -2,7 +2,9 @@
     margin:0px;
     font-family: 'Poppins', sans-serif;
   }
-  .navbar{
+
+/* Navigation bar styling */
+.navbar{
     display:flex;
     flex-direction:row;
     justify-content: flex-start;
@@ -33,6 +35,8 @@ img{
     padding-left:5px;
     padding-right:10px;
 }
+
+/* Main page styling */
 .main-image{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  
     url("./Images/pineapple-background.jpg");
@@ -62,7 +66,6 @@ button{
     padding: 10px 10px;
     background-color:pink;
     color:black;
-    cursor:pointer;
     text-align:center;
 }
 button:hover{
@@ -77,6 +80,9 @@ button:hover{
     align-items:left;
     justify-content: center;
     padding:30px 20px 30px 20px;
+}
+.features-sub>h3,a{
+    padding:5px;
 }
 .features-sub>img{
     object-fit: cover;
@@ -100,15 +106,8 @@ hr{
     padding-top:30px;
     padding-left:10px;
 }
-.footer-image{
-    display:flex;
-    flex-direction: row;
-    align-items:center;
-    margin-top: 20px;
-}
-.footer-icons{
-    padding:5px;
-}
+
+/* Footer styling */
 div>.footer-buttons{
     background-repeat: no-repeat;
     background-position:50%;
@@ -116,15 +115,15 @@ div>.footer-buttons{
     padding:5px;
     overflow:hidden;
 }
+.footer-buttons>button{
+    visibility: hidden;
+}
 
 a.footer-buttons.footer-discord{
     background-image: url(./Images/discord-icon.svg); 
 }
 a.footer-buttons.footer-discord:hover{
     background-image: url(./Images/discord-icon-blue.svg);
-}
-.footer-buttons>button{
-    visibility: hidden;
 }
 a.footer-buttons.footer-reddit{
     background-image: url(./Images/reddit-icon.svg); 
@@ -138,10 +137,67 @@ a.footer-buttons.footer-github{
 a.footer-buttons.footer-github:hover{
     background-image: url(./Images/github-icon-green.svg);
 }
-.footer>.footer-left{
+
+.footer-main{
     display:flex;
-    flex-direction:column;
     align-items:center;
     justify-content: center;
-
+    margin:30px 30px 30px 30px;
 }
+.footer-left, .footer-right{
+    padding-right:30px;
+    padding-left:30px;
+}
+.footer-left>h3,p{
+    padding: 5px;
+}
+
+.footer-resources>a{
+    text-decoration:none;
+    color:black;
+}
+.footer-resources>a:hover{
+    text-decoration:underline;
+}
+footer{
+    margin:20px 0px 20px 20px;
+}
+/* FAQ styling */
+h2.faq-subtext, p.faq-subtext{
+    margin-top:30px;
+    margin-left:20px;
+    padding-left:0;
+}
+button.faq-questions{
+    margin-top:30px;
+    background-color:white;
+    color:black;
+    padding:20px;
+    width:100%;
+    transition:0.5s;
+    font-size:1rem;
+    border-bottom:black;
+    outline-color: black;
+    text-align:left;
+    font-weight:bold;
+}
+
+.faq-answers{
+    padding: 5px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+.faq-questions:after {
+    content: '\02C5'; /* Unicode character for "plus" sign (+) */
+    font-size: 1rem;
+    color: black;
+    float: right;
+    margin-right: 30px; 
+  }
+  
+.active:after {
+    content: "\02C4"; /* Unicode character for "minus" sign (-) */
+  }

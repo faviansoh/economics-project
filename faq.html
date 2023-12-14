@@ -19,9 +19,42 @@
     <!--Navigation bar-->
     <div id="nav-placeholder"></div>
     <!--end of Navigation bar-->
-    <!--
-        Footer
-    -->
+    <div class="faq-text">
+        <h2 class="faq-subtext">Frequently Asked Questions</h2>
+        <p class="faq-subtext">Explore the FAQ section for any quick answers and common queries.</p>
+    </div>
+    <div class="faq-main">
+        <button class="faq-questions">Question 1</button>
+            <div class="faq-answers">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aut nisi dolorem obcaecati, debitis necessitatibus asperiores molestiae alias maxime ipsa sunt ipsam officia deserunt quod, doloremque possimus, at neque molestias.</p>
+            </div>
+        <button class="faq-questions">Question 2</button>
+            <div class="faq-answers">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, animi rerum facilis, provident itaque ex quasi reprehenderit sequi eum eveniet optio repudiandae consequatur. Harum nam temporibus nisi eum minima quod?</p>
+            </div>
+        <button class="faq-questions">Question 3</button>
+            <div class="faq-answers">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem itaque dolore eveniet molestiae fuga deleniti quae eius facere illum architecto tempora odit asperiores quo incidunt error vero maiores, odio animi!</p>
+            </div>
+    </div>
+    
+    <!-- Footer-->
     <div id="footer-placeholder"></div>
+    <script>
+        let question = document.getElementsByClassName("faq-questions");
+
+        for (i = 0; i < question.length; i++) {
+          question[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let answer = this.nextElementSibling;
+            if (answer.style.maxHeight) {
+              answer.style.maxHeight = null;
+            } 
+            else {
+              answer.style.maxHeight = answer.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 </body>
 </html>
