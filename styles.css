@@ -201,3 +201,56 @@ button.faq-questions{
 .active:after {
     content: "\02C4"; /* Unicode character for "minus" sign (-) */
   }
+
+/* Microeconomics Chapters List */
+.chapter-overview{
+    display:flex;
+    flex-direction:column;
+    align-items: left;
+    width:50%;
+    margin:0 auto;
+    gap:30px;
+    overflow:hidden;
+    margin-top:30px;
+}
+
+div.chapter-descriptions>h2,p{
+    padding:0;
+}
+
+.chapter-title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis:auto;
+    align-items:left;
+    justify-content: center;
+    border:#111111;
+    padding:15px;
+    border-style:solid;
+    border-color:#414a4c;
+    border-radius:10px;
+    width:50%;
+    margin: 30px auto 0 auto;
+    overflow:hidden;
+}
+
+.chapter-topics>div.chapter-subtopic>button.chapter-sub{
+    margin-top:20px;
+    width:100%;
+    background-color:white;
+    box-shadow: none;
+}
+.chapter-topics>div.chapter-subtopic>button.chapter-sub:hover{
+    background-color: #EDEDED;
+}
+.chapter-topics>div>button>a{
+    text-transform:none;
+    color:black;
+    text-decoration: none;
+    text-align: left;
+}
+button.chapter-sub{
+    display:flex;
+    align-items:center;
+}
