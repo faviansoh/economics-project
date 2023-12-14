@@ -1,0 +1,147 @@
+* {
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:black;
+    padding:20px;
+    height:100%;
+}
+
+.navbar a:hover{
+    text-decoration:underline;
+}
+
+.navbar > button{
+    border-radius:10px;
+    border:none;
+}
+.nav-index{
+    display:flex;
+    align-items:center;
+    justify-content:spaced-between;
+}
+img{
+    padding-left:5px;
+    padding-right:10px;
+}
+.main-image{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  
+    url("./Images/pineapple-background.jpg");
+    
+    height:70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.main-text{
+    color:white;
+    text-align:center;
+    
+}
+.strong{
+    color:gold;
+}
+button{
+    border:none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color:pink;
+    color:black;
+    cursor:pointer;
+    text-align:center;
+}
+button:hover{
+    background-color:palevioletred;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    color:white;
+}
+.features-sub{
+    display:inline-flex;
+    flex-direction:column;
+    flex-basis:auto;
+    align-items:left;
+    justify-content: center;
+    padding:30px 20px 30px 20px;
+}
+.features-sub>img{
+    object-fit: cover;
+    width:64px;
+    height:64px;
+    padding:10px 0px 10px 10px;
+}
+.features-list{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+hr{
+    border:none;
+    height:1px;
+    background-color:#333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.features-text>h2{
+    padding-top:30px;
+    padding-left:10px;
+}
+.footer-image{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin-top: 20px;
+}
+.footer-icons{
+    padding:5px;
+}
+div>.footer-buttons{
+    background-repeat: no-repeat;
+    background-position:50%;
+    text-decoration: none;
+    padding:5px;
+    overflow:hidden;
+}
+
+a.footer-buttons.footer-discord{
+    background-image: url(./Images/discord-icon.svg); 
+}
+a.footer-buttons.footer-discord:hover{
+    background-image: url(./Images/discord-icon-blue.svg);
+}
+.footer-buttons>button{
+    visibility: hidden;
+}
+a.footer-buttons.footer-reddit{
+    background-image: url(./Images/reddit-icon.svg); 
+}
+a.footer-buttons.footer-reddit:hover{
+    background-image: url(./Images/reddit-icon-orange.svg);
+}
+a.footer-buttons.footer-github{
+    background-image: url(./Images/github-icon.svg); 
+}
+a.footer-buttons.footer-github:hover{
+    background-image: url(./Images/github-icon-green.svg);
+}
+.footer>.footer-left{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+
+}
